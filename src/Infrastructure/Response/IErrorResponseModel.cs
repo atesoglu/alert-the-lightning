@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Application.Response
+namespace Infrastructure.Response
 {
     public interface IErrorResponseModel : IResponseModel
     {

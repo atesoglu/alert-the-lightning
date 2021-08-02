@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text.Json;
 
-namespace Application.Response
+namespace Infrastructure.Response
 {
     public class ResponseModel : IResponseModel
     {

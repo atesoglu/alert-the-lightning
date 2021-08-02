@@ -4,7 +4,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using Application.Exceptions;
 using Application.Exceptions.Base;
-using Application.Response;
+using Infrastructure.Response;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Extensions;
@@ -71,7 +71,7 @@ namespace API.Middlewares
 
                     case ValidationException validationException:
                     {
-                        httpStatusCode = HttpStatusCode.BadRequest;
+                        httpStatusCode = HttpStatusCode.UnprocessableEntity;
                         if (validationException.Errors != null)
                             foreach (var error in validationException.Errors)
                                 response.AddError(error.Key, string.Join(" ", error.Value));

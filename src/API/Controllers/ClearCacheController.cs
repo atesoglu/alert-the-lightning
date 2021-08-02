@@ -1,6 +1,6 @@
 ﻿using API.Controllers.Base;
 using Application.Cache;
-using Application.Response;
+using Infrastructure.Response;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 

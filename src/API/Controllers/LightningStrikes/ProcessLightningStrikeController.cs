@@ -4,8 +4,8 @@ using API.Controllers.Base;
 using Application.Flows.LightningStrikes.Commands;
 using Application.Models;
 using Application.Request;
-using Application.Response;
 using Domain.Models;
+using Infrastructure.Response;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
